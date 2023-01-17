@@ -19,9 +19,14 @@
     </header>
     <main>
       <section class="color-choice-section">
-        <input type="color" class="seed-color" id="color-picker" />
-        <form>
-          <select id="scheme-mode" name="scheme-mode">
+        <form id="color-picker-form">
+          <input
+            type="color"
+            class="seed-color"
+            id="colorPicker"
+            value="#000000"
+          />
+          <select id="schemeMode" name="scheme-mode">
             <option value="monochrome">Monochrome</option>
             <option value="monochrome-dark">Monochrome-dark</option>
             <option value="monochrome-light">Monochrome-light</option>
@@ -31,22 +36,24 @@
             <option value="triad">Triad</option>
             <option value="quad">Quad</option>
           </select>
-          <button id="generate-colors-btn">Get color scheme</button>
+          <button id="generate-colors-btn" type="submit">
+            Get color scheme
+          </button>
         </form>
       </section>
       <section class="generated-colors">
+        <!-- <div class="color-container"></div>
         <div class="color-container"></div>
         <div class="color-container"></div>
         <div class="color-container"></div>
-        <div class="color-container"></div>
-        <div class="color-container"></div>
+        <div class="color-container"></div> -->
       </section>
-      <section class="generated-colors-hex-values">
+      <section id="generated-colors-hex-values">
+        <!-- <div class="hex-value">#FEFEFE</div>
         <div class="hex-value">#FEFEFE</div>
         <div class="hex-value">#FEFEFE</div>
         <div class="hex-value">#FEFEFE</div>
-        <div class="hex-value">#FEFEFE</div>
-        <div class="hex-value">#FEFEFE</div>
+        <div class="hex-value">#FEFEFE</div> -->
       </section>
     </main>
     <script src="script.js"></script>
